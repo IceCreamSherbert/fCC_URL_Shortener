@@ -1,1 +1,39 @@
+<!DOCTYPE html>
 
+<html>
+  <head>
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <img id="background" src="https://cdn.freecodecamp.org/platform/universal/fcc_banner_new.png">
+    <h1>URL Shortener Microservice</h1>
+    <main id="container">
+      <div class="block">
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>Short URL Creator</legend>
+            <label for="url_input">URL: </label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/">            
+            <input id="submit" type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="block">
+        <fieldset>
+          <legend>Usage Example:</legend>
+          <p>[this_project_url]/api/shorturl/[short_url_num]</p>
+        </fieldset>
+      </div>
+    </main>
+    <div id="footer">
+      <a id="link" href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+    </div>
+  </body>
+</html>
